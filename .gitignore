@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+WebApplication1/wwwroot/lib
+RegistrationMicroserviceApp/WebApplication1/wwwroot/lib

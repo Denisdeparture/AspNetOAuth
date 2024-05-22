@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "WebClient";
+
+
+package greet;
+
+// The greeting service definition.
+service Consistency{
+  // Sends a greeting
+  rpc DataMethod (Request) returns (Request);
+  rpc DataCheck (Request) returns (UserCkeck);
+}
+message UserCkeck{
+	bool check = 1;
+
+}
+// The request message containing the user's name.
+message Request {
+  string password = 1;
+  string mail = 2;
+}
+
+// The response message containing the greetings.
+message Response {
+  string message = 1;
+}
