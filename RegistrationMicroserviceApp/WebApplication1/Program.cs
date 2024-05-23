@@ -16,14 +16,14 @@ namespace WebApplication1
             .AddYandex(opt =>
             {
                 opt.CallbackPath = "/signin-yandex";
-                opt.ClientId = "7159bbb6f77f44a7aa8c1aa2cd0f05af";
-                opt.ClientSecret = "76b0d716fd004fe88104d9506029e699";
+                opt.ClientId = "your yandex key";
+                opt.ClientSecret = "your yandex secret";
             })
             .AddGoogle(opt =>
             {
                 opt.CallbackPath = "/signin-google";
-                opt.ClientId = "753901439060-ah20k0qol4n8cq7cda5jhk950eufe9m5.apps.googleusercontent.com";
-                opt.ClientSecret = "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";
+                opt.ClientId = "your google key";
+                opt.ClientSecret = "your google sercret";
             });
             builder.Services.ConfigureApplicationCookie(options =>
             {
